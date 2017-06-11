@@ -1,0 +1,24 @@
+---
+title: "assignment"
+author: "V"
+date: "6/11/2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+install.packages("plotly", repos = "http://cran.us.r-project.org")
+library(plotly)
+```
+
+## R Experiments with Plotly
+
+This has been made as a submission for a coursera assignment
+
+
+## Slide with Bullets
+
+```{r cars}
+set.seed(12321)
+plot_ly(x=mtcars$wt, y=mpg, mode="markers", size= mtcars$hp, color=as.factor(mtcars$cyl))
+
+```
